@@ -1,16 +1,39 @@
-import logo from './logo.svg';
+import React from "react"
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import NavigationBar from "./components/NavigationBar";
+import HomePage from "./components/HomePage"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Wills fancy spicy website
-        </p>
-      </header>
-    </div>
+    <Router>
+      <NavigationBar />
+      <Switch>
+          {/* <Route path="/about">
+            <AboutPage />
+          </Route>
+          <Route path="/music">
+            <MusicPage />
+          </Route>
+          <Route path="/events">
+            <EventsPage />
+          </Route>
+          <Route path="/book">
+            <BookPage />
+          </Route> */}
+          <Route path="/">
+            <HomePage />
+          </Route>
+        </Switch>
+    </Router>
+    
   );
 }
 
