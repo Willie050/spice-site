@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import NavigationBar from "./components/NavigationBar";
 import HomePage from "./components/HomePage"
+import Purchase from "./components/Purchase"
 
 function App() {
   return (
@@ -28,9 +29,13 @@ function App() {
           <Route path="/book">
             <BookPage />
           </Route> */}
+          <Route path="/purchase">
+            <Purchase />
+          </Route>
           <Route path="/">
             <HomePage />
           </Route>
+          
         </Switch>
     </Router>
     
