@@ -7,14 +7,15 @@ import will_jaz from '../media/will_jaz.jpg'
 import will from '../media/will.jpg'
 export default function HomePage() {
     return (
-        <div style={{marginTop:'10%'}}>
+        <div style={{marginTop:'120px', 'backgroundColor': "#8533ff"}} >
+            <Container fluid='lg'>
             <Row>
-                <Col className="col-2" style={{ 'backgroundColor': "#8533ff" }}/>
-                    <Col className="col-8" style={{ 'backgroundColor': "#8533ff" }}>
-                    <Card style={{ width: '100%', marginTop: '10%', backgroundColor:'#cc0000'}}>
+                <Col className="col-3" style={{ 'backgroundColor': "#8533ff" }}/>
+                    <Col className="col-6" style={{ 'backgroundColor': "#8533ff" }}>
+                    <Card style={{ width: '100%', marginTop: '15px', backgroundColor:'#cc0000'}}>
                         <Card.Body>
                             
-                            <h3 style={{fontSize:"150%", color: 'whitesmoke'}}>
+                            <h3 style={{fontSize:"150%", color: 'whitesmoke', textAlign:'center'}}>
                                 Let your taste-buds indulge in delight while discovering new creations you never realized you would love so much. For all of you who are tired of the same bland food, join me and spice up your daily meals!
                             </h3>
                             
@@ -24,7 +25,7 @@ export default function HomePage() {
                         </Card.Body>
                         </Card>
                     </Col>
-                <Col className="col-2" style={{ 'backgroundColor': "#8533ff" }}/>
+                <Col className="col-3" style={{ 'backgroundColor': "#8533ff" }}/>
             </Row>
             <Row>
             <Col className="col-6" style={{ 'backgroundColor': "#8533ff" }}>
@@ -84,6 +85,7 @@ export default function HomePage() {
                 </Row>
             </Col>
             </Row>
+            </Container>
         </div>
     )
 }
