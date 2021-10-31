@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect, useState} from "react"
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -13,6 +13,7 @@ import HomePage from "./components/HomePage"
 import Purchase from "./components/Purchase"
 
 function App() {
+  const [itemsInCart, setItemsInCart] = useState({})
   return (
     <Router>
       <NavigationBar />
@@ -30,7 +31,7 @@ function App() {
             <BookPage />
           </Route> */}
           <Route path="/purchase">
-            <Purchase />
+            <Purchase itemsInCart={itemsInCart} setItemsInCart={setItemsInCart}/>
           </Route>
           <Route path="/">
             <HomePage />

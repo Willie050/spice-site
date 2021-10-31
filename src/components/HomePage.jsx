@@ -15,7 +15,7 @@ export default function HomePage() {
                     <Card style={{ width: '100%', marginTop: '15px', backgroundColor:'#cc0000'}}>
                         <Card.Body>
                             
-                            <h3 style={{fontSize:"150%", color: 'whitesmoke', textAlign:'center'}}>
+                            <h3 style={{fontSize:"120%", color: 'whitesmoke', textAlign:'center'}}>
                                 Let your taste-buds indulge in delight while discovering new creations you never realized you would love so much. For all of you who are tired of the same bland food, join me and spice up your daily meals!
                             </h3>
                             
