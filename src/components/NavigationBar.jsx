@@ -8,7 +8,15 @@ import { GiShoppingCart } from 'react-icons/gi'
 import logo from '../media/logo.jpg'
 import MediaQuery from 'react-responsive';
 
-const NavigationBar = () => {
+const getItemSelectedCount = (allItems) => {
+    let count = 0
+    allItems.map((item, index)=>{
+        count += item['qty']
+    })
+    return count
+}
+
+const NavigationBar = (props) => {
     const [navbarExpand, setNavbarExpand] = useState(false)
     return (
         <>
@@ -30,9 +38,15 @@ const NavigationBar = () => {
                             <Link style={{ color: "white", fontWeight: "700", fontSize: "25px", marginBottom: "5px", marginRight: "20px" }} onClick={() => { setNavbarExpand(false) }} to="/purchase">Purchase</Link>
                         </Nav>
                         <Nav className='justify-content-right'>
-                        <Link style={{ color: "white", fontWeight: "700", fontSize: "25px", marginBottom: "5px", marginRight: "20px" }} onClick={() => { setNavbarExpand(false) }} to="about">
-                                <GiShoppingCart size="2em" color="whitesmoke" />
+                        
+                        <Link style={{ color: "white", fontWeight: "700", fontSize: "25px", marginBottom: "5px", marginRight: "20px" }} onClick={() => { setNavbarExpand(false) }} to="/checkout">
+                                <span>
+                                <GiShoppingCart size="2em" color="whitesmoke"/>
+                                {getItemSelectedCount(props.itemState)}
+                                </span>
                             </Link>
+                            
+                            
                         </Nav>
                     </Navbar.Collapse>
                 

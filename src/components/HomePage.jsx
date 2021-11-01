@@ -12,7 +12,7 @@ export default function HomePage() {
             <Row>
                 <Col className="col-3" style={{ 'backgroundColor': "#8533ff" }}/>
                     <Col className="col-6" style={{ 'backgroundColor': "#8533ff" }}>
-                    <Card style={{ width: '100%', marginTop: '15px', backgroundColor:'#cc0000'}}>
+                    <Card rounded style={{ width: '100%', marginTop: '15px', backgroundColor:'#cc0000'}}>
                         <Card.Body>
                             
                             <h3 style={{fontSize:"120%", color: 'whitesmoke', textAlign:'center'}}>

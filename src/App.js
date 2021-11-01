@@ -11,12 +11,22 @@ import {
 import NavigationBar from "./components/NavigationBar";
 import HomePage from "./components/HomePage"
 import Purchase from "./components/Purchase"
+import Checkout from "./components/Checkout"
+import spiceData from './spice-merch.json'
 
 function App() {
-  const [itemsInCart, setItemsInCart] = useState({})
+  const [itemState, setItemState] = useState(spiceData)
+//   useEffect(() => {
+//     console.log("state updated from App.js")
+// }, [itemsInCart])
+
+  // console.log("itemsInCart from Root: " + Object.keys(itemsInCart))
+  console.log(itemState)
   return (
     <Router>
-      <NavigationBar />
+      <NavigationBar 
+      itemState={itemState}
+      />
       <Switch>
           {/* <Route path="/about">
             <AboutPage />
@@ -27,11 +37,12 @@ function App() {
           <Route path="/events">
             <EventsPage />
           </Route>
-          <Route path="/book">
-            <BookPage />
-          </Route> */}
+          */}
+          <Route path="/checkout">
+            <Checkout itemState={itemState}/>
+          </Route> 
           <Route path="/purchase">
-            <Purchase itemsInCart={itemsInCart} setItemsInCart={setItemsInCart}/>
+            <Purchase itemState={itemState} setItemState={setItemState}/>
           </Route>
           <Route path="/">
             <HomePage />
