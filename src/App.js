@@ -11,7 +11,7 @@ import {
 import NavigationBar from "./components/NavigationBar";
 import HomePage from "./components/HomePage"
 import Purchase from "./components/Purchase"
-import Checkout from "./components/Checkout"
+import Cart from "./components/Cart"
 import spiceData from './spice-merch.json'
 
 function App() {
@@ -38,8 +38,8 @@ function App() {
             <EventsPage />
           </Route>
           */}
-          <Route path="/checkout">
-            <Checkout itemState={itemState}/>
+          <Route path="/cart">
+            <Cart itemState={itemState}/>
           </Route> 
           <Route path="/purchase">
             <Purchase itemState={itemState} setItemState={setItemState}/>

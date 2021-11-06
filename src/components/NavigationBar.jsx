@@ -39,7 +39,7 @@ const NavigationBar = (props) => {
                         </Nav>
                         <Nav className='justify-content-right'>
                         
-                        <Link style={{ color: "white", fontWeight: "700", fontSize: "25px", marginBottom: "5px", marginRight: "20px" }} onClick={() => { setNavbarExpand(false) }} to="/checkout">
+                        <Link style={{ color: "white", fontWeight: "700", fontSize: "25px", marginBottom: "5px", marginRight: "20px" }} onClick={() => { setNavbarExpand(false) }} to="/cart">
                                 <span>
                                 <GiShoppingCart size="2em" color="whitesmoke"/>
                                 {getItemSelectedCount(props.itemState)}
