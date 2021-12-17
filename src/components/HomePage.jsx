@@ -10,7 +10,7 @@ export default function HomePage() {
         <div style={{marginTop:'120px', 'backgroundColor': "#8533ff"}}>
             <Container fluid='lg'>
             <Row>
-                ensure Env var works: {process.env.HOWDY}
+                ensure Env var works: {process.env.REACT_APP_HOWDY}
                 <Col className="col-3" style={{ 'backgroundColor': "#8533ff" }}/>
                     <Col className="col-6" style={{ 'backgroundColor': "#8533ff" }}>
                     <Card rounded style={{ width: '100%', marginTop: '15px', backgroundColor:'#cc0000'}}>
