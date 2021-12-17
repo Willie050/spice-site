@@ -7,13 +7,12 @@ import will_jaz from '../media/will_jaz.jpg'
 import will from '../media/will.jpg'
 export default function HomePage() {
     return (
-        <div style={{marginTop:'120px', 'backgroundColor': "#8533ff"}}>
+        <div style={{marginTop:'120px', 'backgroundColor': "#8533ff"}} >
             <Container fluid='lg'>
             <Row>
-                ensure Env var works : {process.env.REACT_APP_HOWDY}
                 <Col className="col-3" style={{ 'backgroundColor': "#8533ff" }}/>
                     <Col className="col-6" style={{ 'backgroundColor': "#8533ff" }}>
-                    <Card rounded style={{ width: '100%', marginTop: '15px', backgroundColor:'#cc0000'}}>
+                    <Card style={{ width: '100%', marginTop: '15px', backgroundColor:'#cc0000'}}>
                         <Card.Body>
                             
                             <h3 style={{fontSize:"120%", color: 'whitesmoke', textAlign:'center'}}>

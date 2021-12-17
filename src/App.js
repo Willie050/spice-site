@@ -4,9 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
-  Link
 } from "react-router-dom";
 import NavigationBar from "./components/NavigationBar";
 import HomePage from "./components/HomePage"
@@ -27,7 +26,7 @@ function App() {
       <NavigationBar 
       itemState={itemState}
       />
-      <Switch>
+      <Routes>
           {/* <Route path="/about">
             <AboutPage />
           </Route>
@@ -38,17 +37,11 @@ function App() {
             <EventsPage />
           </Route>
           */}
-          <Route path="/cart">
-            <Cart itemState={itemState}/>
-          </Route> 
-          <Route path="/purchase">
-            <Purchase itemState={itemState} setItemState={setItemState}/>
-          </Route>
-          <Route path="/">
-            <HomePage />
-          </Route>
+          <Route path="/cart" element={<Cart itemState={itemState}/>} />
+          <Route path="/purchase" element={<Purchase itemState={itemState} setItemState={setItemState}/>} />
+          <Route path="/" element={<HomePage />} />
           
-        </Switch>
+        </Routes>
     </Router>
     
   );
