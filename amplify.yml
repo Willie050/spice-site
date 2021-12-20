@@ -14,11 +14,3 @@ frontend:
   cache:
     paths:
       - node_modules/**/*
-backend:
-  phases:
-    preBuild:
-      commands:
-        - npm i
-    build:
-      commands:
-        - npm run start-server
