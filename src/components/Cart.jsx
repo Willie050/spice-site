@@ -6,9 +6,9 @@ export default function Checkout(props) {
     let costBeforeDiscount = 0
     let discount = 0
     selectedItems.map((item, index) => {
-        costBeforeDiscount += (13 * item['qty'])
+        costBeforeDiscount += item['price']
     })
-    
+
 
     const applyDiscountOptional = () => {
         if (selectedItems.length == 3) {
@@ -33,6 +33,25 @@ export default function Checkout(props) {
                 <h1>
                     PURCHASE DISCOUNT APPLIED: $2 off each spice for one full set!
                 </h1>
+            )
+        } else {
+            return (
+                <>
+                    <h1>
+                        No Discount Applied... Discounts currently available:
+                    </h1>
+                    <ul>
+                        <li style={{ 'fontSize': '150%' }}>
+                            $3 off for one set of 3
+                        </li>
+                        <li style={{ 'fontSize': '150%' }}>
+                            $4 off for one set of 4
+                        </li>
+                        <li style={{ 'fontSize': '150%' }}>
+                            $2 off each spice for one full set!
+                        </li>
+                    </ul>
+                </>
             )
         }
     }
@@ -59,16 +78,16 @@ export default function Checkout(props) {
                                         return (
                                             <Container>
                                                 <Row>
-                                                <Col className='col-9'>
-                                                    <h5>
-                                                        {item['name']}
-                                                    </h5>
-                                                </Col>
-                                                <Col className='col-3'>
-                                                <h5 style={{ textAlign:'right' }}>
-                                                    Qty:  {item['qty']}
-                                                </h5>
-                                                </Col>
+                                                    <Col className='col-9'>
+                                                        <h5>
+                                                            {item['name']}
+                                                        </h5>
+                                                    </Col>
+                                                    <Col className='col-3'>
+                                                        <h5 style={{ textAlign: 'right' }}>
+                                                            Qty:  {item['qty']}
+                                                        </h5>
+                                                    </Col>
                                                 </Row>
                                                 <hr />
                                                 <br />
@@ -86,14 +105,14 @@ export default function Checkout(props) {
                                     <span> Cost before discount, taxes, and shipping: ${costBeforeDiscount}.00 </span>
                                 </Row>
                                 <Row>
-                                    <h2>Price after discount applied: ${costBeforeDiscount - discount}.00</h2> 
+                                    <h2>Price after discount applied: ${costBeforeDiscount - discount}.00</h2>
                                 </Row>
                                 <Link to="/checkout">
-                                <Button>
-                                    Continue To Checkout
-                                </Button>
+                                    <Button>
+                                        Continue To Checkout
+                                    </Button>
                                 </Link>
-                                
+
                             </Card.Body>
                         </Card>
                     </Col>
