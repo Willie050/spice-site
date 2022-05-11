@@ -6,7 +6,7 @@ backend:
         - npm ci
     build:
       commands:
-        - npm run start
+        - npm run start-server
   artifacts:
     baseDirectory: client/build
     files:
