@@ -40,7 +40,7 @@ export default function Checkout(props) {
 
     if (selectedItems.length === 0) {
         return (
-            <div style={{ marginTop: '120px', 'backgroundColor': "#8533ff" }}>
+            <div style={{ marginTop: '120px', 'backgroundColor': "#68aa3a" }}>
                 <Container fluid='lg'>
                     You dont have anything, go back and add stuff in your cart
                 </Container>

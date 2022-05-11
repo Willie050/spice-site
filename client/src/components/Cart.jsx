@@ -1,6 +1,8 @@
 import React from 'react'
 import { Container, Row, Col, Card, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+
+
 export default function Checkout(props) {
     let selectedItems = props.itemState.filter(item => item['qty'] != 0)
     let costBeforeDiscount = 0
@@ -8,7 +10,6 @@ export default function Checkout(props) {
     selectedItems.map((item, index) => {
         costBeforeDiscount += item['price']
     })
-
 
     const applyDiscountOptional = () => {
         if (selectedItems.length == 3) {
@@ -37,7 +38,7 @@ export default function Checkout(props) {
         } else {
             return (
                 <>
-                    <h1>
+                    <h1 style={{color:"#68aa3a", backgroundColor: "blue"}}>
                         No Discount Applied... Discounts currently available:
                     </h1>
                     <ul>
@@ -55,6 +56,10 @@ export default function Checkout(props) {
             )
         }
     }
+    
+
+
+    
     return (
         <div style={{ marginTop: '120px', 'backgroundColor': "#8533ff" }}>
             <Container fluid='lg'>
