@@ -1,9 +1,9 @@
 version: 1
 backend:
   phases:
-    # preBuild:
-    #   commands:
-    #     - npm ci
+    preBuild:
+      commands:
+        - npm install
     build:
       commands:
         - npm run start-server
