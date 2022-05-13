@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Container, Row, Col, Card, Button, Image } from 'react-bootstrap'
-import spiceData from '../spice-merch.json'
+import spiceData from '../../src/spice-merch.json'
 
 
 // TODO START mapping out array of 0s, and then set the values when clicked to the respected array indexes.
