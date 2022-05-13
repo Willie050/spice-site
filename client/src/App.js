@@ -3,24 +3,34 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+// import NavigationBar from "./components/NavigationBar";
+import HomePage from "./components/HomePage"
+// import Purchase from "./components/Purchase"
+// import Cart from "./components/Cart"
+// import Checkout from "./components/Checkout"
+import spiceData from '../src/spice-merch.json'
+
 function App() {
+  // load the in memory item state date
+  // const [itemState, setItemState] = useState(spiceData)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React Ok
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+       {/* <NavigationBar 
+       itemState={itemState}
+      // /> */}
+      {/* <h1>hello</h1>*/}
+       <Routes>
+          {/* <Route path="/checkout" element={<Checkout itemState={itemState}/>} />
+    //       <Route path="/cart" element={<Cart itemState={itemState}/>} />
+    //       <Route path="/purchase" element={<Purchase itemState={itemState} setItemState={setItemState}/>} /> */}
+       <Route index element={<HomePage />} /> 
+         </Routes> 
+     </BrowserRouter>
   );
 }
 

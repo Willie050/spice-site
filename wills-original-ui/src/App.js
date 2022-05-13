@@ -24,16 +24,18 @@ function App() {
   console.log(itemState)
   return (
     <Router>
-      <NavigationBar 
+      {/* <NavigationBar 
       itemState={itemState}
       />
+      */}
       <Routes>
           {/* <Route path="/checkout" element={<Checkout itemState={itemState}/>} />
           <Route path="/cart" element={<Cart itemState={itemState}/>} />
-          <Route path="/purchase" element={<Purchase itemState={itemState} setItemState={setItemState}/>} /> */}
+          <Route path="/purchase" element={<Purchase itemState={itemState} setItemState={setItemState}/>} /> 
+          */}
           <Route path="/" element={<HomePage />} />
-          
-        </Routes>
+  
+        </Routes> 
     </Router>
     
   );

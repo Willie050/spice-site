@@ -1,0 +1,66 @@
+[
+    {
+        "name": "MEDICAN",
+        "ingredients": "(Cumin, turmeric, onion, garlic, pepper, coriander, allspice, sugar, thyme, chives, nutmeg, cinnamon, sage, chilies, mustard, salt, honey.)",
+        "description": "This seasoning is earthy, aromatic, sweet & salty-spiced with peppery and herbal notes accompanied by a medium-hot heat. This is a combination of Mediterranean and Jamaican Jerk spices. You may think of chicken when hearing jerk, but this blend is good on all meats, tofu, veggies and even popcorn!",
+        "imageContainer": "Medican_Container.jpg",
+        "imageSpice": "Medican_3.jpg",
+        "qty": 0,
+        "price": 13.00
+    },
+    {
+        "name": "FISHY BIZZ",
+        "ingredients": "(Paprika, chilies, garlic, mustard, za’atar, sugar, salt, sesame seeds)",
+        "description": "This sweet, nutty and smoky seasoning is mapley, bittersweet, earthy, and garlicky. Obviously, you hear fishy and think its only for fish, but give it a try on other seafood like scallops and shrimp. Additionally, this blend is great on meats, tofu or veggies. Personally I love to use this on squash and zucchini.",
+        "imageContainer": "Fishy_BusinessContainer.jpg",
+        "imageSpice": "Fishy_Business_3.jpg",
+        "qty": 0,
+        "price": 13.00
+    },
+    {
+        "name": "MT. GREEN",
+        "ingredients": "(Onion, pepper, fennel, rosemary, thyme, sage, basil, oregano, spearmint, marjoram, bell peppers, shallots, parsley, salt, garlic, lemon, mild curry, arrowroot.)",
+        "description": "This salted pepper-based rub is citrusy, licoricey and has herbal aromatic notes. Best on lamb, beef and duck, but also a great addition to slow cooking soups, stews, and roasts. Or sprinkle on vegetables before roasting. It's also great to mix with some olive oil to make a spectacular dip for bread. One of my favorite things to do with this is sprinkle it on some fresh fennel.",
+        "imageContainer": "Mt_Greenery_Container.jpg",
+        "imageSpice": "Mt_Green_2.jpg",
+        "qty": 0,
+        "price": 13.00
+    },
+    {
+        "name": "EL BARRIO",
+        "ingredients": "(Lemon, pepper, fennel, salt, sugar, garlic, orange, chilies, fenugreek, onion, turmeric, mace, thyme, coriander, cumin, ginger, cayenne, arrowroot, cinnamon, anise, cloves, cardamom, paprika.)",
+        "description": "This warm citrus-based seasoning has peppery, salted, tart, tangy, and licoricey flavors with floral notes. This is an all-purpose blend, fantastic for most savory dishes. Substitute for black pepper anywhere you want a bold, zesty flavor.",
+        "imageContainer": "El_Barrio_Container.jpg",
+        "imageSpice": "El_Barrio_3.jpg",
+        "qty": 0,
+        "price": 13.00
+    },
+    {
+        "name": "LOCO ADOBO",
+        "ingredients": "(Chiles, paprika, salt, pepper, shallots, oregano, onion, cumin, cloves, arrowroot, mustard, fennel, tarragon, parsley.)",
+        "description": "This medium-hot, zesty and savory seasoning is smoky, earthy, peppery, and sweet-herbed with garlic notes. It's a moderately hot blend that packs more flavor than heat. This is a versatile blend you can use anywhere, another all-purpose one, this is great on almost anything including tacos, fajitas, rice, chicken, pork, steaks, vegetables, and more. ",
+        "imageContainer": "Loco_Adobo_Container.jpg",
+        "imageSpice": "Loco_Adobo_3.jpg",
+        "qty": 0,
+        "price": 13.00
+    },
+    {
+        "name": "SPECKLED DRIP",
+        "ingredients": "(Ginger, garlic, onion, Sugar, salt, fennel, cinnamon, pepper, anise, cloves, orange peel, coriander,  annatto, all spice, turmeric, lemon peel, arrowroot.)",
+        "description": "This sweet and salty warm citrus seasoning is garlicky, sweet-spiced, and licoricey with peppery notes and a strong medium-high heat. This seasoning was designed for the grill, but I think its great in a good stir fry and to make dressings, marinades, or sauces. Goes wonderfully sprinkled on top a bowl of ramen.",
+        "imageContainer": "Speckled_Drip_Container.jpg",
+        "imageSpice": "Speckled_Drip_3.jpg",
+        "qty": 0,
+        "price": 13.00
+    },
+    {
+        "name": "MOROCCAN BOD",
+        "ingredients": "(Paprika, cumin, onion, salt, pepper, lemon peel, garlic, celery, rosemary, thyme, turmeric, oregano, sugar, parsley, cardamom, mustard, coriander, mace, cinnamon, cayenne, arrowroot, dill.)",
+        "description": "This paprika-based seasoning is peppery, earthy, oniony, and sweet with tangy citrusy herbal notes. Another all purpose one that I especially like for fusion cooking, this has a little twist on Moroccan flavors adding some bold onion, pepper, and herbal notes. Try this in a stir fry, it's excellent when sprinkled on vegetables or rice. Use it to season some meats or kebabs, even sprinkle some into a soup or salad for a little added something special.",
+        "imageContainer": "Moroccan_Bod_Container.jpg",
+        "imageSpice": "Moroccan_Bod_3.jpg",
+        "qty": 0,
+        "price": 13.00
+    }
+
+]
